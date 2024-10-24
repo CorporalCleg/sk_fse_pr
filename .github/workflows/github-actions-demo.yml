@@ -17,4 +17,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: docker build . -t fse_test
-      - run: docker run -it --rm -v ./dataset:/mnt/data fse_test:latest python3 -m unittest test/test_preproc.py 
+      - run: docker run --rm -v ./dataset:/mnt/data fse_test:latest python3 -m unittest test/test_preproc.py 
