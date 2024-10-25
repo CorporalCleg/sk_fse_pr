@@ -7,6 +7,12 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+     # - name: Build and push
+     #   uses: docker/build-push-action@v4
+     #    with:
+     #      context: .
+      - name: Git checkout
+        uses: actions/checkout@v4
       - run: pwd
       - run: ls
       - name: build and testing
