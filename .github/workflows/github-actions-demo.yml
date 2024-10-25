@@ -9,5 +9,7 @@ jobs:
       - run: |
           ls ${{ github.workspace }}
       - run: cd ..
-      - run: cat Dockerfile
-      - run: docker build . -f Dockerfile -t fse_test
+      - name: build and testing
+        with:
+          context: .
+        run: docker build . -f Dockerfile -t fse_test
