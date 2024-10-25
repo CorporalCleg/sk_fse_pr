@@ -8,4 +8,5 @@ jobs:
       - run: pwd
       - run: |
           ls ${{ github.workspace }}
-      - run: docker build . -t fse_test
+      - run: cat Dockerfile
+      - run: docker build . -f Dockerfile -t fse_test
