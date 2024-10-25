@@ -12,4 +12,4 @@ jobs:
       - name: build and testing
         with:
           context: .
-        run: docker build . -f Dockerfile -t fse_test
+          run: docker build . -f Dockerfile -t fse_test
