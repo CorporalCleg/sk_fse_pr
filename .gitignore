@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*sam_vit.pth
+
 # C extensions
 *.so
 
@@ -164,3 +166,6 @@ cython_debug/
 .vscode/
 
 temp_notebooks/
+
+dataset/output
+dataset/preprocess_data
