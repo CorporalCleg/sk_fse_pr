@@ -6,5 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-      - run: ls
+      - run: |
+          ls ${{ github.workspace }}
       - run: docker build . -t fse_test
